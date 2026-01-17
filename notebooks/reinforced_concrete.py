@@ -21,7 +21,7 @@ def _(mo):
     - Date: now
     - License: ?
 
-    The purpose of this calculator is to...
+    The purpose of this calculator is to... hopefully not kill anyone!!!
 
     ---
     """)
@@ -65,7 +65,6 @@ def _():
         80: 39600,
         100: 42200,
     }
-
     return (data,)
 
 
@@ -89,7 +88,6 @@ def _(mo):
 @app.cell
 def _(slab_beam):
     slab_beam.value
-
     return
 
 
