@@ -65,6 +65,7 @@ def _():
         80: 39600,
         100: 42200,
     }
+
     return (data,)
 
 
@@ -82,6 +83,13 @@ def _(mo):
     slab_beam = mo.ui.dropdown(options=["slab", "beam"], value="beam", label="slab_beam")
     slab_type = mo.ui.dropdown(options=["columns", "walls"], value="columns", label="slab_type")
     mo.vstack([slab_beam, slab_type])
+    return (slab_beam,)
+
+
+@app.cell
+def _(slab_beam):
+    slab_beam.value
+
     return
 
 
